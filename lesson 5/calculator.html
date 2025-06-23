@@ -1,0 +1,103 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+    </head> 
+    <style>
+       .a{
+        border: none;
+        border-radius: 20px;
+        color:black;
+        background-color:antiquewhite;
+        padding: 30px;
+        cursor: pointer;
+       }
+       .b{
+        border: none;
+        border-radius: 20px;
+        color:antiquewhite;
+        background-color:black;
+        padding: 30px;
+        cursor: pointer;
+       }
+       .a:hover{
+        background-color:azure;
+       }
+       .b:hover{
+color:black;
+        background-color:aquamarine;
+       }
+       .a:active{
+        opacity:0.5;
+       }
+       .b:active{
+        opacity: 0.5;
+       }
+    </style>
+        <body>
+            <p>
+  <button class="a" onclick="calculation+='1'; console.log(calculation);">
+                1
+            </button>
+            <button class="a" onclick="calculation+='2'; console.log(calculation);">
+                2
+            </button>
+            <button class="a" onclick="calculation+='3'; console.log(calculation);">
+                3
+            </button>
+            <button class="b" onclick="calculation+='+'; console.log(calculation);">
+                +
+            </button>
+            </p>
+            <p>
+                  <button class="a" onclick="calculation+='4'; console.log(calculation);">
+                4
+            </button>
+            <button class="a" onclick="calculation+='5'; console.log(calculation);">
+                5
+            </button>
+            <button class="a" onclick="calculation+='6'; console.log(calculation);">
+                6
+            </button>
+            <button class="b" onclick="calculation+='-'; console.log(calculation);">
+                -
+            </button>
+            </p>
+          <p>
+              <button class="a" onclick="calculation+='7'; console.log(calculation);">
+                7
+            </button>
+            <button class="a" onclick="calculation+='8'; console.log(calculation);">
+                8
+            </button>
+            <button class="a" onclick="calculation+='9'; console.log(calculation);">
+                9
+            </button>
+            <button class="b" onclick="calculation+='*'; console.log(calculation);">
+                *
+            </button>
+          </p>
+          <p>
+              <button class="a" onclick="calculation+='0'; console.log(calculation);">
+                0
+            </button>
+            <button class="a" onclick="calculation+='.'; console.log(calculation);">
+                .
+            </button>
+            <button class="a" onclick="calculation+='/'; console.log(calculation);">
+                /
+            </button>
+            <button class="b" onclick="console.log(eval(calculation));">
+                =
+            </button> 
+          </p>
+          <button class="b" onclick="calculation+=''; console.log(calculation);">
+                clear
+            </button>
+        </body>
+        <script>
+            let calculation='';
+        </script>
+</html>
