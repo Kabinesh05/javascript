@@ -3,5 +3,28 @@
         name: 'baseketball',
         price: 2095
     };
+    product.quantity=5;
+   
+    product.price = 2000;
+// loop everything in object
+    for(let key in product){
+        console.log(key,product[key]);
+    }
+//to print all keys
+    console.log(Object.keys(product));
+   // to print all values
+        console.log(Object.values(product));
+//to print all values and keys 
+            console.log(Object.entries(product));
+            //to change object into variable
+            let{name,price}=product;
+//printing the cxhanged variable
+            console.log(name);
+//cannot change anything
+            Object.freeze(product);
+
+        // can update but cannot add/remove.
+            Object.seal(product);
+
     console.log(product);
 </script>

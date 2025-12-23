@@ -1,0 +1,11 @@
+<script>
+    function arrayswap(nums){
+        temp=nums[0];
+        nums[0]=nums[nums.length-1];
+        nums[nums.length-1]=temp;
+        return nums;
+    }
+    const nums=[100,900,890,987,65,876];
+    console.log(arrayswap(nums));
+
+</script>

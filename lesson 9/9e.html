@@ -1,0 +1,12 @@
+<input placeholder="Enter your name: " class="a" onkeydown="if(event.key === 'Enter'){
+    printkey();
+}">
+<button>submit</button>
+<p class="b"></p>
+
+<script>
+    function printkey(){
+        document.querySelector('.b').innerText=`His name is ${document.querySelector('.a').value}.`;
+    }
+
+</script>

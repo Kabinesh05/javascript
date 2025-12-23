@@ -56,10 +56,11 @@
     <button onclick="updatecalc((eval(calculation)));">
       =
     </button>
-    <button onclick="calculation=''; console.log(calculation); localStorage.removeItem('calc');">
+    <button onclick="calculation='';  document.querySelector('.b').innerHTML=calculation; localStorage.removeItem('calc');">
       clear
     </button>
     </p>
+    <p class="b"></p>
      
   </body>
 </html>
@@ -70,13 +71,13 @@
 
   function cal(value){
     calculation+=value;
-    console.log(calculation);
+    document.querySelector('.b').innerHTML=calculation;
     localStorage.setItem('calc',calculation);
 
   }
   function updatecalc(val){
     calculation=val;
-    console.log(calculation);
+    document.querySelector('.b').innerHTML=calculation;
      localStorage.setItem('calc',calculation);
 
   }
