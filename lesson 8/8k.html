@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <button onclick="playgames('heads')">
+                heads
+            </button>
+            <button onclick="playgames('tails')">
+                tails
+            </button>
+        </body>
+    </head>
+</html>
+<script>
+    
+//one of the most important usage of local storage need clarification in chat gpt chat.
+ const score = JSON.parse(localStorage.getItem('a')) || {
+    wins: 0,
+    losses: 0
+   };
+function playgames(guess){
+ let a=Math.random()
+    let result = a<0.5?'heads':'tails';
+    guess===result?console.log('You Win!'):console.log('You Lose!');
+
+    if(guess==result){
+        score.wins++;
+    }else{
+        score.losses++;
+    }
+    console.log(score);
+
+    localStorage.setItem('a', JSON.stringify(score));
+}
+ </script>

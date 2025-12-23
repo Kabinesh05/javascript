@@ -1,0 +1,17 @@
+<script>
+    const product = {
+        name: 'baseketball',
+        price: 2095
+    };
+        console.log(product);
+
+    product.price=2595;
+    console.log(product);
+    
+
+    product['delivery-time']='3 days';
+       
+console.log(JSON.stringify(product));
+const js=JSON.stringify(product);
+console.log(JSON.parse(js));
+</script>
